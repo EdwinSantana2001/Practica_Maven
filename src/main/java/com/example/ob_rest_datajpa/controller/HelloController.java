@@ -1,6 +1,5 @@
 package com.example.ob_rest_datajpa.controller;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +12,7 @@ public class HelloController {
         return "Hola Mundo que tal vamos!! Hasta luego";
     }
 
-    @Test
+
     @GetMapping("/BootStrap")
     public String BootStrap (){
         return """
