@@ -81,7 +81,7 @@ public class BookController {
     }
 
     @DeleteMapping("/api/books/{id}")
-    public ResponseEntity<Book> delete(@PathVariable Long id){
+    public ResponseEntity<Book> deleteId(@PathVariable Long id){
 
         if (!repository.existsById(id)){
             log.warn("Triying delete a book non-existent");
